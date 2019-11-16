@@ -23,9 +23,9 @@ auto FaceDetector::detectFaces( cv::Mat const & image ) -> std::vector< cv::Rect
 
     cv::equalizeHist( grayImage, grayImage );
 
-    double   scaleFactor  = 1.1;
-    int      minNeighbors = 4;
-    cv::Size minSize{ 10, 10 };
+    constexpr double   scaleFactor  = 1.1;
+    constexpr int      minNeighbors = 3;
+    cv::Size minSize{ 200, 200 };
     cv::Size maxSize{ grayImage.cols, grayImage.rows };
 
     std::vector< cv::Rect > detectedFaces;
