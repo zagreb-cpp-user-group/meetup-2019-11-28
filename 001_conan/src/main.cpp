@@ -5,27 +5,32 @@
 
 #include <iostream>
 
-template< typename Outcome >
-auto succeedOrDie( Outcome && outcome )
+namespace
 {
-    if ( outcome.has_value() )
+    template< typename Outcome >
+    auto succeedOrDie( Outcome && outcome )
     {
-        return std::forward< Outcome >( outcome ).value();
+        if ( outcome.has_value() )
+        {
+            return std::forward< Outcome >( outcome ).value();
+        }
+        else
+        {
+            std::cerr << outcome.error() << std::endl;
+            std::terminate();
+        }
     }
-    else
-    {
-        std::cerr << outcome.error() << std::endl;
-        std::terminate();
-    }
-}
 
-auto drawFaces( cv::Mat & image, std::vector< cv::Rect > const & rectangles )
-{
-    static auto const color = cv::Scalar{ 0.f, 0.f, 255.f };
-    for ( auto && rect : rectangles )
+    auto drawFaces( cv::Mat & image, std::vector< cv::Rect > const & rectangles )
     {
-        cv::rectangle( image, { rect.x, rect.y }, { rect.x + rect.width, rect.y + rect.height }, color );
+        static auto const color = cv::Scalar{ 0.f, 0.f, 255.f };
+        for ( auto && rect : rectangles )
+        {
+            cv::rectangle( image, { rect.x, rect.y }, { rect.x + rect.width, rect.y + rect.height }, color );
+        }
     }
+
+    static constexpr auto ESC_KEYCODE = 27;
 }
 
 int main()
@@ -48,7 +53,7 @@ int main()
             cv::imshow( "face detector", frame );
 
             auto c = static_cast< char >( cv::waitKey( 1 ) );
-            return c != 27;
+            return c != ESC_KEYCODE;
         }
     );
 
