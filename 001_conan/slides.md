@@ -2,50 +2,66 @@
 marp: true
 theme: gaia
 backgroundColor: #538DC1
-color: #fff
+color: white
 ---
+
+<style>
+a {
+    color: white
+}
+</style>
 
 <!-- _class: lead -->
 
-# Conan - C/C++ package manager
-
-![50%](https://conan.io/img/jfrog_conan_logo.png)
+# C/C++ development with package managers
 
 ---
 
-<!-- _class: lead -->
+# Package manager
 
-# Demo
+- from [Wikipedia](https://en.wikipedia.org/wiki/Package_manager):
+    - _a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner_
 
-<!--
-- link na github
-- pokrenuti demo sa webcam
-- pokazati source code
-- najaviti
--->
-
----
-
-# How to write
-
-Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
-
-```markdown
-# Slide 1
-
-foobar
+- types:
+    - system package managers (e.g. `apt-get`, `yum`, `brew`, `chocolate`)
+    - application package managers (e.g. VSCode Extension Manager)
+    - development package managers
 
 ---
 
-# Slide 2
+## Development package managers
 
-foobar
-```
+- provide a simple way to obtain dependencies **in a reproducable manner**
+    - support handling multiple versions of the same package
+- provide a facility to update dependencies
+- support resolving conflicts between dependencies
+- **integrate well with the build system**
+- reduce build times
 
 ---
 
-# Neki novi slajd
+## Other languages
 
-- nesto prvo
-    - nesto unutra
-- nesto drugo
+- Python: `pip`, `easy_install`
+- JavaScript: `npm`
+- Java: `maven`, `gradle`
+- Ruby: `gem`
+- Rust: `cargo`
+- C#: `nuget`
+
+---
+
+## C/C++
+
+- main problem:
+    - _build system integration_
+    - no standard build system for C/C++
+
+---
+
+## C/C++ - current solutions
+
+- [Conan](https://conan.io)
+- [vcpkg](https://github.com/microsoft/vcpkg)
+- [hunter](https://docs.hunter.sh/en/latest/)
+- [buckaroo](https://buckaroo.pm)
