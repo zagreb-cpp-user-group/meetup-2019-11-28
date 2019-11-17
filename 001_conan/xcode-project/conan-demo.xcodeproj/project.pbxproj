@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91D695C23819C880017463B /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9464B7C2381932D00880D3E /* Info.plist */; };
+		C91D695E23819D150017463B /* haarcascades in CopyFiles */ = {isa = PBXBuildFile; fileRef = C91D695D23819D0A0017463B /* haarcascades */; };
+		C9464B732381646100880D3E /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9464B6E2381646100880D3E /* FaceDetector.cpp */; };
+		C9464B742381646100880D3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9464B702381646100880D3E /* main.cpp */; };
+		C9464B752381646100880D3E /* CameraFeed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9464B712381646100880D3E /* CameraFeed.cpp */; };
+		C9464B7A238167A500880D3E /* AppleCameraPermission.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9464B79238167A500880D3E /* AppleCameraPermission.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9464B57238163F400880D3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = .;
+			dstSubfolderSpec = 16;
+			files = (
+				C91D695C23819C880017463B /* Info.plist in CopyFiles */,
+				C91D695E23819D150017463B /* haarcascades in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C91D695D23819D0A0017463B /* haarcascades */ = {isa = PBXFileReference; lastKnownFileType = folder; path = haarcascades; sourceTree = "<group>"; };
+		C9464B6D2381646100880D3E /* Error.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Error.hpp; path = ../../src/Error.hpp; sourceTree = "<group>"; };
+		C9464B6E2381646100880D3E /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = ../../src/FaceDetector.cpp; sourceTree = "<group>"; };
+		C9464B6F2381646100880D3E /* FaceDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FaceDetector.hpp; path = ../../src/FaceDetector.hpp; sourceTree = "<group>"; };
+		C9464B702381646100880D3E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
+		C9464B712381646100880D3E /* CameraFeed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CameraFeed.cpp; path = ../../src/CameraFeed.cpp; sourceTree = "<group>"; };
+		C9464B722381646100880D3E /* CameraFeed.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CameraFeed.hpp; path = ../../src/CameraFeed.hpp; sourceTree = "<group>"; };
+		C9464B762381647700880D3E /* conan-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "conan-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9464B772381662500880D3E /* conanbuildinfo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conanbuildinfo.xcconfig; sourceTree = "<group>"; };
+		C9464B782381675D00880D3E /* AppleCameraPermission.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AppleCameraPermission.hpp; path = ../../src/AppleCameraPermission.hpp; sourceTree = "<group>"; };
+		C9464B79238167A500880D3E /* AppleCameraPermission.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppleCameraPermission.mm; path = ../../src/AppleCameraPermission.mm; sourceTree = "<group>"; };
+		C9464B7B2381929C00880D3E /* conan-demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "conan-demo.entitlements"; sourceTree = "<group>"; };
+		C9464B7C2381932D00880D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9464B56238163F400880D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9464B50238163F400880D3E = {
+			isa = PBXGroup;
+			children = (
+				C9464B7C2381932D00880D3E /* Info.plist */,
+				C9464B7B2381929C00880D3E /* conan-demo.entitlements */,
+				C9464B772381662500880D3E /* conanbuildinfo.xcconfig */,
+				C9464B6C2381644E00880D3E /* src */,
+				C9464B762381647700880D3E /* conan-demo */,
+				C91D695D23819D0A0017463B /* haarcascades */,
+			);
+			sourceTree = "<group>";
+		};
+		C9464B6C2381644E00880D3E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C9464B712381646100880D3E /* CameraFeed.cpp */,
+				C9464B722381646100880D3E /* CameraFeed.hpp */,
+				C9464B6D2381646100880D3E /* Error.hpp */,
+				C9464B6E2381646100880D3E /* FaceDetector.cpp */,
+				C9464B6F2381646100880D3E /* FaceDetector.hpp */,
+				C9464B702381646100880D3E /* main.cpp */,
+				C9464B782381675D00880D3E /* AppleCameraPermission.hpp */,
+				C9464B79238167A500880D3E /* AppleCameraPermission.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9464B58238163F400880D3E /* conan-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9464B60238163F400880D3E /* Build configuration list for PBXNativeTarget "conan-demo" */;
+			buildPhases = (
+				C9464B55238163F400880D3E /* Sources */,
+				C9464B56238163F400880D3E /* Frameworks */,
+				C9464B57238163F400880D3E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "conan-demo";
+			productName = "conan-demo";
+			productReference = C9464B762381647700880D3E /* conan-demo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9464B51238163F400880D3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					C9464B58238163F400880D3E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C9464B54238163F400880D3E /* Build configuration list for PBXProject "conan-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9464B50238163F400880D3E;
+			productRefGroup = C9464B50238163F400880D3E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9464B58238163F400880D3E /* conan-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9464B55238163F400880D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9464B742381646100880D3E /* main.cpp in Sources */,
+				C9464B752381646100880D3E /* CameraFeed.cpp in Sources */,
+				C9464B7A238167A500880D3E /* AppleCameraPermission.mm in Sources */,
+				C9464B732381646100880D3E /* FaceDetector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9464B5E238163F400880D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9464B5F238163F400880D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9464B61238163F400880D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9464B772381662500880D3E /* conanbuildinfo.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = "conan-demo.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCJZ79U33T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cppmeetup.talk1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		C9464B62238163F400880D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9464B772381662500880D3E /* conanbuildinfo.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = "conan-demo.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCJZ79U33T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cppmeetup.talk1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9464B54238163F400880D3E /* Build configuration list for PBXProject "conan-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9464B5E238163F400880D3E /* Debug */,
+				C9464B5F238163F400880D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9464B60238163F400880D3E /* Build configuration list for PBXNativeTarget "conan-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9464B61238163F400880D3E /* Debug */,
+				C9464B62238163F400880D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9464B51238163F400880D3E /* Project object */;
+}

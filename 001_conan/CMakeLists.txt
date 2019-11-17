@@ -13,9 +13,15 @@ include(${CMAKE_BINARY_DIR}/conan.cmake)
 
 conan_cmake_run( CONANFILE conanfile.txt BASIC_SETUP CMAKE_TARGETS BUILD missing )
 
-add_executable( conan_demo
+set( SOURCES
     src/main.cpp
     src/FaceDetector.cpp
     src/CameraFeed.cpp
 )
+
+if ( APPLE )
+    list( APPEND SOURCES src/AppleCameraPermission.mm )
+endif()
+
+add_executable( conan_demo ${SOURCES} )
 target_link_libraries( conan_demo PRIVATE CONAN_PKG::opencv CONAN_PKG::boost )

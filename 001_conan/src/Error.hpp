@@ -1,3 +1,5 @@
+#pragma once
+
 #include <boost/outcome.hpp>
 
 #include <string_view>

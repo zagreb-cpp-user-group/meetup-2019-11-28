@@ -3,6 +3,10 @@
 #include "CameraFeed.hpp"
 #include "FaceDetector.hpp"
 
+#ifdef __APPLE__
+#   include "AppleCameraPermission.hpp"
+#endif
+
 #include <iostream>
 
 namespace
@@ -35,6 +39,13 @@ namespace
 
 int main()
 {
+#ifdef __APPLE__
+    if ( !obtainAppleCameraPermission() )
+    {
+        std::cerr << "Failed to obtain camra persmission!" << std::endl;
+        std::terminate();
+    }
+#endif
     // Create a VideoCapture object and use camera to capture the video
     auto cameraFeed = succeedOrDie( createCameraFeed() );
     auto faceDetector = succeedOrDie( createFaceDetector() );
