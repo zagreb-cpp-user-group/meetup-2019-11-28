@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gaia
-backgroundColor: #538DC1
+backgroundColor: #48b2e8
 color: white
 paginate: true
 ---
