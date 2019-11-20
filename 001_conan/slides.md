@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: gaia
-backgroundColor: #48b2e8
+backgroundColor: black
 color: white
 paginate: true
 ---
@@ -9,6 +9,15 @@ paginate: true
 <style>
 a {
     color: white
+}
+h1 {
+    color: #48b2e8
+}
+h2 {
+    color: #48b2e8
+}
+h3 {
+    color: #48b2e8
 }
 </style>
 
