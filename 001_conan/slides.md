@@ -169,6 +169,20 @@ conan install /path/to/conanfile.txt -pr profile
 
 ---
 
+### Creating conan packages
+
+- create a `conanfile.py` file
+    - (optionally) implement the `source` method
+    - (optionally) implement the `build` method
+    - implement the `package` method
+    - implement the `package_info` method
+- create the package with:
+```
+conan create /path/to/conanfile.py user/channel [-pr profile] [-s settings] [-o options]
+```
+
+---
+
 # TODO:
 - creating packages
     - binary-only package support
