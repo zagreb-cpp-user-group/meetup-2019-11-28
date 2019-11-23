@@ -11,7 +11,7 @@ style: |
     h1, h2, h3, h4, h5, h6 {
         color: #48b2e8
     }
-    code, code[class*='language']{
+    code, code[class*='language'] {
         background: #222
     }
     section.lead h2 {
