@@ -1,0 +1,9 @@
+[requires]
+face-camera/0.1.0@user/testing
+
+# [options]
+# face-camera:shared=True
+
+[imports]
+res, haarcascades/haarcascade_frontalface_alt.xml -> .
+# lib, *.dylib -> .
