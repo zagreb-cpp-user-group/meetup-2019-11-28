@@ -13,14 +13,16 @@ include(${CMAKE_BINARY_DIR}/conan.cmake)
 
 conan_cmake_run( CONANFILE conanfile.txt BASIC_SETUP CMAKE_TARGETS BUILD missing )
 
+set( SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src )
+
 set( SOURCES
-    src/main.cpp
-    src/FaceDetector.cpp
-    src/CameraFeed.cpp
+    ${SRC_ROOT}/main.cpp
+    ${SRC_ROOT}/FaceDetector.cpp
+    ${SRC_ROOT}/CameraFeed.cpp
 )
 
 if ( APPLE )
-    list( APPEND SOURCES src/AppleCameraPermission.mm )
+    list( APPEND SOURCES ${SRC_ROOT}/AppleCameraPermission.mm )
 endif()
 
 add_executable( conan_demo ${SOURCES} )

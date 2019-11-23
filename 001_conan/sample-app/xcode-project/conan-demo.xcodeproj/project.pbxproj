@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		C91D695C23819C880017463B /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9464B7C2381932D00880D3E /* Info.plist */; };
 		C91D695E23819D150017463B /* haarcascades in CopyFiles */ = {isa = PBXBuildFile; fileRef = C91D695D23819D0A0017463B /* haarcascades */; };
-		C9464B732381646100880D3E /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9464B6E2381646100880D3E /* FaceDetector.cpp */; };
-		C9464B742381646100880D3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9464B702381646100880D3E /* main.cpp */; };
-		C9464B752381646100880D3E /* CameraFeed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9464B712381646100880D3E /* CameraFeed.cpp */; };
-		C9464B7A238167A500880D3E /* AppleCameraPermission.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9464B79238167A500880D3E /* AppleCameraPermission.mm */; };
+		C97A24BE23892C1E008467C5 /* CameraFeed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97A24B623892C1E008467C5 /* CameraFeed.cpp */; };
+		C97A24BF23892C1E008467C5 /* AppleCameraPermission.mm in Sources */ = {isa = PBXBuildFile; fileRef = C97A24B723892C1E008467C5 /* AppleCameraPermission.mm */; };
+		C97A24C023892C1E008467C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97A24BB23892C1E008467C5 /* main.cpp */; };
+		C97A24C123892C1E008467C5 /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97A24BD23892C1E008467C5 /* FaceDetector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,18 +31,18 @@
 
 /* Begin PBXFileReference section */
 		C91D695D23819D0A0017463B /* haarcascades */ = {isa = PBXFileReference; lastKnownFileType = folder; path = haarcascades; sourceTree = "<group>"; };
-		C9464B6D2381646100880D3E /* Error.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Error.hpp; path = ../../src/Error.hpp; sourceTree = "<group>"; };
-		C9464B6E2381646100880D3E /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = ../../src/FaceDetector.cpp; sourceTree = "<group>"; };
-		C9464B6F2381646100880D3E /* FaceDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FaceDetector.hpp; path = ../../src/FaceDetector.hpp; sourceTree = "<group>"; };
-		C9464B702381646100880D3E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
-		C9464B712381646100880D3E /* CameraFeed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CameraFeed.cpp; path = ../../src/CameraFeed.cpp; sourceTree = "<group>"; };
-		C9464B722381646100880D3E /* CameraFeed.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CameraFeed.hpp; path = ../../src/CameraFeed.hpp; sourceTree = "<group>"; };
 		C9464B762381647700880D3E /* conan-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "conan-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9464B772381662500880D3E /* conanbuildinfo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conanbuildinfo.xcconfig; sourceTree = "<group>"; };
-		C9464B782381675D00880D3E /* AppleCameraPermission.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AppleCameraPermission.hpp; path = ../../src/AppleCameraPermission.hpp; sourceTree = "<group>"; };
-		C9464B79238167A500880D3E /* AppleCameraPermission.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppleCameraPermission.mm; path = ../../src/AppleCameraPermission.mm; sourceTree = "<group>"; };
 		C9464B7B2381929C00880D3E /* conan-demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "conan-demo.entitlements"; sourceTree = "<group>"; };
 		C9464B7C2381932D00880D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97A24B623892C1E008467C5 /* CameraFeed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraFeed.cpp; sourceTree = "<group>"; };
+		C97A24B723892C1E008467C5 /* AppleCameraPermission.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppleCameraPermission.mm; sourceTree = "<group>"; };
+		C97A24B823892C1E008467C5 /* FaceDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FaceDetector.hpp; sourceTree = "<group>"; };
+		C97A24B923892C1E008467C5 /* AppleCameraPermission.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppleCameraPermission.hpp; sourceTree = "<group>"; };
+		C97A24BA23892C1E008467C5 /* Error.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Error.hpp; sourceTree = "<group>"; };
+		C97A24BB23892C1E008467C5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C97A24BC23892C1E008467C5 /* CameraFeed.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CameraFeed.hpp; sourceTree = "<group>"; };
+		C97A24BD23892C1E008467C5 /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceDetector.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,28 +59,29 @@
 		C9464B50238163F400880D3E = {
 			isa = PBXGroup;
 			children = (
+				C97A24B523892C1E008467C5 /* src */,
 				C9464B7C2381932D00880D3E /* Info.plist */,
 				C9464B7B2381929C00880D3E /* conan-demo.entitlements */,
 				C9464B772381662500880D3E /* conanbuildinfo.xcconfig */,
-				C9464B6C2381644E00880D3E /* src */,
 				C9464B762381647700880D3E /* conan-demo */,
 				C91D695D23819D0A0017463B /* haarcascades */,
 			);
 			sourceTree = "<group>";
 		};
-		C9464B6C2381644E00880D3E /* src */ = {
+		C97A24B523892C1E008467C5 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				C9464B712381646100880D3E /* CameraFeed.cpp */,
-				C9464B722381646100880D3E /* CameraFeed.hpp */,
-				C9464B6D2381646100880D3E /* Error.hpp */,
-				C9464B6E2381646100880D3E /* FaceDetector.cpp */,
-				C9464B6F2381646100880D3E /* FaceDetector.hpp */,
-				C9464B702381646100880D3E /* main.cpp */,
-				C9464B782381675D00880D3E /* AppleCameraPermission.hpp */,
-				C9464B79238167A500880D3E /* AppleCameraPermission.mm */,
+				C97A24B623892C1E008467C5 /* CameraFeed.cpp */,
+				C97A24B723892C1E008467C5 /* AppleCameraPermission.mm */,
+				C97A24B823892C1E008467C5 /* FaceDetector.hpp */,
+				C97A24B923892C1E008467C5 /* AppleCameraPermission.hpp */,
+				C97A24BA23892C1E008467C5 /* Error.hpp */,
+				C97A24BB23892C1E008467C5 /* main.cpp */,
+				C97A24BC23892C1E008467C5 /* CameraFeed.hpp */,
+				C97A24BD23892C1E008467C5 /* FaceDetector.cpp */,
 			);
-			path = src;
+			name = src;
+			path = ../../src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,10 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9464B742381646100880D3E /* main.cpp in Sources */,
-				C9464B752381646100880D3E /* CameraFeed.cpp in Sources */,
-				C9464B7A238167A500880D3E /* AppleCameraPermission.mm in Sources */,
-				C9464B732381646100880D3E /* FaceDetector.cpp in Sources */,
+				C97A24BF23892C1E008467C5 /* AppleCameraPermission.mm in Sources */,
+				C97A24BE23892C1E008467C5 /* CameraFeed.cpp in Sources */,
+				C97A24C123892C1E008467C5 /* FaceDetector.cpp in Sources */,
+				C97A24C023892C1E008467C5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
