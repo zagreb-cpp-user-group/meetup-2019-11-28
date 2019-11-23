@@ -10,14 +10,11 @@ paginate: true
 a {
     color: white
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
     color: #48b2e8
 }
-h2 {
-    color: #48b2e8
-}
-h3 {
-    color: #48b2e8
+code, code[class*='language']{
+    background: #222
 }
 </style>
 
