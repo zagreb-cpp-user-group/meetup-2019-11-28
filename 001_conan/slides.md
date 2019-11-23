@@ -3,7 +3,7 @@ marp: true
 theme: gaia
 backgroundColor: black
 color: white
-paginate: true
+paginate: false
 ---
 
 <style>
@@ -151,10 +151,9 @@ conan install /path/to/conanfile.txt -pr profile
 
 ---
 
-# Conan demo
+<!-- _class: lead -->
 
-- project available at Github:
-    - https://github.com/DoDoENT/cpp-meetups/tree/master/001_conan
+# Conan demo https://github.com/DoDoENT/cpp-meetups/tree/master/001_conan
 
 ---
 
@@ -173,7 +172,7 @@ conan install /path/to/conanfile.txt -pr profile
 
 - create a `conanfile.py` file with:
 
-```
+```txt
 conan new package-name/version
 ```
 
@@ -181,7 +180,7 @@ conan new package-name/version
 - implement the `package` and `package_info` methods
 - create the package with:
 
-```
+```txt
 conan create /path/to/conanfile.py user/channel [-pr profile] [-s settings] [-o options]
 ```
 
@@ -305,13 +304,48 @@ conan_basic_setup()''')
 
 ---
 
-# TODO:
-- creating packages
-    - binary-only package support
-- conan remotes
-    - conan center, conan community, bincrafters
-    - local instance (conan-server or Artifactory)
-- advanced topics
-    - recipe revisions
-    - CI best practices
+## Uploading packages
 
+```txt
+conan upload -r <remote> package/version@user/channel [--all]
+```
+
+- support for multiple remotes
+- some remotes require authentication
+- notable remotes:
+    - [conan-center](https://bintray.com/conan/conan-center)
+    - [conan-community](https://bintray.com/conan-community/conan)
+    - [bincrafters](https://bintray.com/bincrafters/public-conan)
+
+---
+
+## Custom conan servers
+
+- [conan-server](https://docs.conan.io/en/latest/uploading_packages/running_your_server.html#running-your-server)
+    - open source, reference implementation of conan protocol
+- [Artifactory Community Edition for C/C++](https://docs.conan.io/en/latest/uploading_packages/artifactory_ce.html#artifactory-ce)
+    - free and easy to setup and maintain
+    - lacks some more advanced feautes available in Artifactory Pro
+- [Artifactory Pro](https://www.jfrog.com/confluence/display/RTF/Artifactory+Comparison+Matrix)
+    - commercial solution
+    - high availability, replication, ...
+
+---
+
+# Conclusion
+
+- development with package managers is easier
+    - _focus on developing your code, not compiling 3rd party packages_
+- multiple solutions for C and C++
+- `conan` currently has most advantages
+    - cross-platform
+    - orthogonal to build system
+    - decentralized
+    - custom/private server instances
+
+
+---
+
+<!-- _class: lead -->
+
+# Thank you
