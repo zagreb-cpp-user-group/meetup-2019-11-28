@@ -173,7 +173,7 @@ conan install /path/to/conanfile.txt -pr profile
 
 <!-- _class: lead -->
 
-# Conan demo https://github.com/DoDoENT/cpp-meetups/tree/master/001_conan
+# Conan demo https://github.com/zagreb-cpp-user-group/meetup-2019-11-28
 
 ---
 
