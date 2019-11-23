@@ -4,30 +4,50 @@ theme: gaia
 backgroundColor: black
 color: white
 paginate: false
----
+style: |
+    a {
+        color: white
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #48b2e8
+    }
+    code, code[class*='language']{
+        background: #222
+    }
+    section.lead h2 {
+        color: #48b2e8;
+        text-align: left;
+        font-size: xx-large;
 
-<style>
-a {
-    color: white
-}
-h1, h2, h3, h4, h5, h6 {
-    color: #48b2e8
-}
-code, code[class*='language']{
-    background: #222
-}
-</style>
+        position: relative;
+        top: 6em
+    }
+    section.lead h3 {
+        color: #48b2e8;
+        text-align: right;
+        font-size: xx-large;
+
+        position: relative;
+        top: 2em
+    }
+---
 
 <!-- _class: lead -->
 
 # C/C++ development with package managers
 
+## Nenad Mikša,
+## Head of TSI @ Microblink
+
+### @dodo at cpplang.slack.com
+### meetup@microblink.com
+
 ---
 
-# Package manager
+## Package manager
 
 - from [Wikipedia](https://en.wikipedia.org/wiki/Package_manager):
-    - _a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner_
+    > _a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner_
 
 - types:
     - system package managers (e.g. `apt-get`, `yum`, `brew`, `chocolate`)
@@ -75,7 +95,7 @@ code, code[class*='language']{
 
 ---
 
-### Buckaroo
+## Buckaroo
 
 - similar idea to [nix](https://nixos.org/nix/), but focused on build
 - tightly integrated with [buck build system](https://buck.build)
@@ -84,7 +104,7 @@ code, code[class*='language']{
 
 ---
 
-### Hunter
+## Hunter
 
 - tightly integrated with [CMake](https://cmake.org)
 - supports sharing binary cache
@@ -95,7 +115,7 @@ code, code[class*='language']{
 
 ---
 
-### Vcpkg
+## Vcpkg
 
 - backed by Microsoft
 - currently under active development
@@ -104,7 +124,7 @@ code, code[class*='language']{
 
 ---
 
-### Conan
+## Conan
 
 - backed by JFrog
 - supports reproducible builds
@@ -116,7 +136,7 @@ code, code[class*='language']{
 
 ---
 
-### Conan (continued)
+## Conan (continued)
 
 - all dependencies specified in `conanfile.txt`
 - example:
@@ -135,7 +155,7 @@ res, haarcascades/haarcascade_frontalface_alt.xml -> .
 
 ---
 
-### Conan - package installation
+## Conan - package installation
 
 ```txt
 conan install /path/to/conanfile.txt [-g generator] [-s settings] [-o options]
@@ -157,7 +177,7 @@ conan install /path/to/conanfile.txt -pr profile
 
 ---
 
-### Dependency overriding
+## Dependency overriding
 
 - possible to override dependencies' dependencies
     - some rebuilds may be necessary, but conan handles this automatically
@@ -168,7 +188,7 @@ conan install /path/to/conanfile.txt -pr profile
 
 ---
 
-### Creating conan packages
+## Creating conan packages
 
 - create a `conanfile.py` file with:
 
@@ -186,7 +206,7 @@ conan create /path/to/conanfile.py user/channel [-pr profile] [-s settings] [-o 
 
 ---
 
-### Template for conan package
+## Template for conan package
 
 ```python
 from conans import ConanFile, CMake, tools
