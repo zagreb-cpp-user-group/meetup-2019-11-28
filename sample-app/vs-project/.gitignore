@@ -1,0 +1,10 @@
+conanbuildinfo*
+conaninfo*
+conan_imports_manifest.txt
+conan.lock
+haarcascades
+graph_info.json
+*.vcxproj.user
+x64
+Win32
+.vs
