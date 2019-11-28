@@ -345,7 +345,7 @@ conan upload -r <remote> package/version@user/channel [--all]
     - open source, reference implementation of conan protocol
 - [Artifactory Community Edition for C/C++](https://docs.conan.io/en/latest/uploading_packages/artifactory_ce.html#artifactory-ce)
     - free and easy to setup and maintain
-    - lacks some more advanced feautes available in Artifactory Pro
+    - lacks some more advanced features available in Artifactory Pro
 - [Artifactory Pro](https://www.jfrog.com/confluence/display/RTF/Artifactory+Comparison+Matrix)
     - commercial solution
     - high availability, replication, ...
